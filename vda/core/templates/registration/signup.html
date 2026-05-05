@@ -16,8 +16,8 @@
   {% endif %}
   <div class="cardForm">
   <form method="post">
-    {% csrf_token %}
     {% for field in form %}
+        {% csrf_token %}
       <table>
         {% if 'confirmation' in field.label_tag %}
           <tr><td>Confirm :</td>
